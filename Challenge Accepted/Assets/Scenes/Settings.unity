@@ -1596,7 +1596,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -47.9}
-  m_SizeDelta: {x: 91.92, y: 25.8}
+  m_SizeDelta: {x: 114.57, y: 25.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777572896
 MonoBehaviour:
@@ -2211,6 +2211,7 @@ MonoBehaviour:
   - {fileID: 53463161}
   - {fileID: 1992128682}
   - {fileID: 1274221948}
+  - {fileID: 777572894}
 --- !u!114 &1002871081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3293,6 +3294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dummyTeam: 0
+  duckTheme: 0
   redTeamNodes: 
   blueTeamNodes: 
   cockNames: []
@@ -3534,7 +3536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: 
 --- !u!222 &1946709328
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3645,7 +3647,7 @@ RectTransform:
   m_GameObject: {fileID: 1992128682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1247}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.54172, y: 0.52149, z: 1}
   m_Children:
   - {fileID: 1946709326}
   m_Father: {fileID: 223304941}
@@ -3653,7 +3655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.8, y: 113.4}
+  m_AnchoredPosition: {x: 46, y: 121.5}
   m_SizeDelta: {x: 57.72, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992128684
@@ -3697,7 +3699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2078888888}
-        m_MethodName: backButton
+        m_MethodName: setThemeDuck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3729,8 +3731,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1e4f07092a2856641a092569ecdc90d3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3930,10 +3932,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dummyBut: {fileID: 69129207}
   nameList: {fileID: 53463163}
-  challengeList: {fileID: 0}
-  themeBut: {fileID: 0}
+  challengeList: {fileID: 777572896}
+  themeBut: {fileID: 1992128684}
   tickedBox: {fileID: 21300000, guid: 360f0433811586e4099c6a8dfda59aea, type: 3}
-  untickedBox: {fileID: 21300000, guid: 24834bb2c35b0c845a8ec75894bc135d, type: 3}
+  untickedBox: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  redSwitch: {fileID: 21300000, guid: 1e4f07092a2856641a092569ecdc90d3, type: 3}
+  greenSwitch: {fileID: 21300000, guid: 044f37d3cb3d16d46bb557fd22db947a, type: 3}
+  backCock: {fileID: 21300000, guid: 1fb8b9ff696aaa0438c62f5892274ba7, type: 3}
+  backDuck: {fileID: 21300000, guid: ee6312e26de0d5347918a28cefbac4be, type: 3}
+  background: {fileID: 159779898}
 --- !u!4 &2078888889
 Transform:
   m_ObjectHideFlags: 0

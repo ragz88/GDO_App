@@ -13,6 +13,12 @@ public class Settings : MonoBehaviour
 
     public Sprite tickedBox;
     public Sprite untickedBox;
+    public Sprite redSwitch;
+    public Sprite greenSwitch;
+    public Sprite backCock;
+    public Sprite backDuck;
+
+    public SpriteRenderer background;
 
     private void Start()
     {
@@ -37,18 +43,20 @@ public class Settings : MonoBehaviour
 
     public void setThemeDuck()
     {
-        //GameManager.instance.duckTheme = true;
+        GameManager.instance.duckTheme = true;
         themeBut.onClick.AddListener(setThemeCock);
         themeBut.onClick.RemoveListener(setThemeDuck);
-        themeBut.image.sprite = tickedBox;
+        themeBut.image.sprite = greenSwitch;
+        background.sprite = backDuck;
     }
 
     public void setThemeCock()
     {
-        //GameManager.instance.duckTheme = false;
+        GameManager.instance.duckTheme = false;
         themeBut.onClick.AddListener(setThemeDuck);
         themeBut.onClick.RemoveListener(setThemeCock);
-        themeBut.image.sprite = untickedBox;
+        themeBut.image.sprite = redSwitch;
+        background.sprite = backCock;
     }
 
     public void EliminatePlayer()

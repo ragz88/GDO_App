@@ -8,6 +8,7 @@ public class StartButtons : MonoBehaviour
     public GameObject[] thingsToActivate;
     public ScoreSimulation scoreFixer;
     public Camera ARCam;
+    public TimedUpdate timeUpdate;
 
     public enum EventType
     {
@@ -20,8 +21,11 @@ public class StartButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ARCam.enabled = false;
-
+        
+        if (eventType == EventType.Event_1)
+        {
+            ARCam.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +44,10 @@ public class StartButtons : MonoBehaviour
         if (eventType == EventType.Event_1)
         {
             scoreFixer.startTiming = true;
+        }
+        else
+        {
+            timeUpdate.startTiming = true;
         }
 
         gameObject.SetActive(false);

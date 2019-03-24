@@ -1660,7 +1660,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Challenge 2
       m_Image: {fileID: 0}
-    - m_Text: Challeng 3
+    - m_Text: Challenge 3
       m_Image: {fileID: 0}
     - m_Text: Elimination
       m_Image: {fileID: 0}
@@ -3311,6 +3311,8 @@ MonoBehaviour:
   blueTeamNodes: 
   cockNames: []
   currentPage: 4
+  challenge1CockScore: 0
+  challenge1DuckScore: 0
 --- !u!4 &1881150582
 Transform:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class TimedUpdate : MonoBehaviour
     public float minutes;
     float seconds;
     float timepassed = 0;
+    public bool startTiming = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,12 @@ public class TimedUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timepassed += Time.deltaTime;
+        if (startTiming)
+        {
+            timepassed += Time.deltaTime;
+            print("Im timing");
+        }
+        
 
         if(timepassed > seconds)
         {

@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
 
     public CurrentPage currentPage = CurrentPage.Chal1;
 
+    public int challenge1CockScore = 0;
+    public int challenge1DuckScore = 0;
+
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 
     //Awake is always called before any Start functions

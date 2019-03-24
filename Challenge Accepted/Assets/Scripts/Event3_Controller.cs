@@ -23,7 +23,7 @@ public class Event3_Controller : MonoBehaviour
     bool countingDown = false;
     bool timeUp = false;
 
-    float currentValue = 15;//180;  //time in seconds
+    float currentValue = 180;//180 = 3 minutes  //time in seconds
     float initialValue;
 
     int cockScore = 0;
@@ -42,7 +42,7 @@ public class Event3_Controller : MonoBehaviour
         {
             currentValue -= Time.deltaTime;
             timerCircle.fillAmount = currentValue / initialValue;
-            if (currentValue < 1)
+            if (currentValue < 0.1f)
             {
                 timeUp = true;
                 countingDown = false;

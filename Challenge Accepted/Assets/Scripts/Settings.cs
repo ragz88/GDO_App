@@ -18,6 +18,8 @@ public class Settings : MonoBehaviour
     public Sprite backCock;
     public Sprite backDuck;
 
+    public Camera cam;
+
     public SpriteRenderer background;
 
     private void Start()
@@ -48,6 +50,7 @@ public class Settings : MonoBehaviour
         themeBut.onClick.RemoveListener(setThemeDuck);
         themeBut.image.sprite = greenSwitch;
         background.sprite = backDuck;
+        cam.backgroundColor = Color.black;
     }
 
     public void setThemeCock()
@@ -57,6 +60,7 @@ public class Settings : MonoBehaviour
         themeBut.onClick.RemoveListener(setThemeCock);
         themeBut.image.sprite = redSwitch;
         background.sprite = backCock;
+        cam.backgroundColor = Color.white;
     }
 
     public void EliminatePlayer()

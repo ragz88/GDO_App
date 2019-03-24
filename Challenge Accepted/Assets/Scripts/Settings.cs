@@ -92,7 +92,7 @@ public class Settings : MonoBehaviour
         int count = 0;
         for (int i = 0; i < GameManager.instance.cockNames.Length; i++)
         {
-            if (GameManager.instance.cockNames[i] != nameList.captionText.text)
+            if (count <= tempNameArray.Length && GameManager.instance.cockNames[i] != nameList.captionText.text)
             {
                 tempNameArray[count] = GameManager.instance.cockNames[i];
                 count++;

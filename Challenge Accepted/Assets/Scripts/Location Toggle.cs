@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class LocationToggle : MonoBehaviour
 {
-    [SerializeField]
+    public
     Sprite locationActiveRed;
-    [SerializeField]
+    public
     Sprite locationActiveGreen;
-    [SerializeField]
+    public
     Sprite locationInactive;
     bool isActive = true;
 

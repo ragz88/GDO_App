@@ -633,7 +633,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   green: {fileID: 21300000, guid: 1cb147b1b7c70b54f8be47a2ba35ef3c, type: 3}
   red: {fileID: 21300000, guid: 312b493b610227f4c8533231b3ef7807, type: 3}
+  green2: {fileID: 0}
+  red2: {fileID: 0}
   isButton: 1
+  isHeading: 0
 --- !u!114 &109886085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,7 +1126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   green: {fileID: 21300000, guid: 30855bc05cfdbda469edc136d7e7d8b2, type: 3}
   red: {fileID: 21300000, guid: 7e78726a0c23a364b87d766e14557986, type: 3}
+  green2: {fileID: 0}
+  red2: {fileID: 0}
   isButton: 0
+  isHeading: 0
 --- !u!212 &246821780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1328,6 +1334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386969886}
   - component: {fileID: 386969885}
+  - component: {fileID: 386969884}
   m_Layer: 0
   m_Name: Pictures
   m_TagString: Untagged
@@ -1335,6 +1342,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &386969884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386969883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371a0007b6399c1418556e812944f313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pictures:
+  - {fileID: 21300000, guid: bae23b6690b222c4e9c66076016d01da, type: 3}
+  - {fileID: 21300000, guid: cb61c818d48aa0948866509826fc200b, type: 3}
+  - {fileID: 21300000, guid: b53ebec3a283b0047b9171c66f8505fd, type: 3}
+  - {fileID: 21300000, guid: 1095137caaf059a458f51a15da14a0ea, type: 3}
+  - {fileID: 21300000, guid: 892288e25d1ffd84a960588558ff5859, type: 3}
+  - {fileID: 21300000, guid: eb4516586c90a9644b83d5fc78f68384, type: 3}
 --- !u!212 &386969885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1372,7 +1398,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a76ae7d8a8034674896c8d46bdaf8c18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bae23b6690b222c4e9c66076016d01da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1391,8 +1417,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386969883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 3.4}
-  m_LocalScale: {x: 0.93929, y: 0.93929, z: 0.93929}
+  m_LocalPosition: {x: 0, y: 1.05, z: 3.4}
+  m_LocalScale: {x: 1, y: 1, z: 0.93929}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -1631,7 +1657,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   green: {fileID: 21300000, guid: a11086a3c3e450640aaac27702ae0d64, type: 3}
   red: {fileID: 21300000, guid: be06928c6d310e04c8c89a0b12239c42, type: 3}
+  green2: {fileID: 0}
+  red2: {fileID: 0}
   isButton: 1
+  isHeading: 0
 --- !u!114 &614229756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2273,7 +2302,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   green: {fileID: 21300000, guid: fd221081e955481488478773fe28b681, type: 3}
   red: {fileID: 21300000, guid: a9a472ad08a7a3541b12758d607585f1, type: 3}
+  green2: {fileID: 21300000, guid: 248dcb729dcb16b44b1bd1aec336e5fe, type: 3}
+  red2: {fileID: 21300000, guid: dc4e2ea2629977b458d8207b168369a3, type: 3}
   isButton: 0
+  isHeading: 1
 --- !u!1 &926536987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,12 +3819,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ef8207460ccd5104984b7b9043d3bb71, type: 3}
   - {fileID: 21300000, guid: c875bd00c36cf704b8e3aa0e581bad16, type: 3}
   - {fileID: 21300000, guid: 27922e9cac5dbf34a83d40db31e71ddb, type: 3}
+  - {fileID: 21300000, guid: e9a7f8ff659115d4bb9f46837531506b, type: 3}
   - {fileID: 21300000, guid: 9f2cb6854b0b3134a8c1da6692433eba, type: 3}
   - {fileID: 21300000, guid: 56a1b4cc961f14c4c999342cc2314c69, type: 3}
   redHints:
   - {fileID: 21300000, guid: 67994bc19742a1d42a8bea5235a2fd9c, type: 3}
   - {fileID: 21300000, guid: 1e73912e613c9894d8543808f1b0fc44, type: 3}
   - {fileID: 21300000, guid: 604a0814e5f719d4e9992109bb0ce551, type: 3}
+  - {fileID: 21300000, guid: 4c80ac39e70845e4ba5c886ad1dba8ae, type: 3}
   - {fileID: 21300000, guid: f397ecdc6977964428aa7aa54d82ba9f, type: 3}
   - {fileID: 21300000, guid: 0cf7bc2e3c0c1a642bca9a7f46b2e018, type: 3}
 --- !u!1 &1646050482

@@ -7,7 +7,10 @@ public class ThemeSwitchingElement : MonoBehaviour
 {
     public Sprite green;
     public Sprite red;
+    public Sprite green2;
+    public Sprite red2;
     public bool isButton = false;
+    public bool isHeading = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +41,17 @@ public class ThemeSwitchingElement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      if(isHeading)
+      {
+            if (GameManager.instance.duckTheme)
+            {
+                this.GetComponent<SpriteRenderer>().sprite = green2;
+            }
+            else
+            {
+                this.GetComponent<SpriteRenderer>().sprite = red2;
+            }
+      }
 
     }
 }

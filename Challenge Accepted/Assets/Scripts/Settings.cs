@@ -19,12 +19,31 @@ public class Settings : MonoBehaviour
     public Sprite backDuck;
 
     public Camera cam;
+    public Text dummyText;
+    public Text elimText;
+
 
     public SpriteRenderer background;
 
     private void Start()
     {
         resetDropDown();
+        switch (GameManager.instance.currentPage)
+        {
+            case GameManager.CurrentPage.Chal1:
+                challengeList.value = 0;
+                break;
+            case GameManager.CurrentPage.Chal2:
+                challengeList.value = 1;
+                break;
+            case GameManager.CurrentPage.Chal3:
+                challengeList.value = 2;
+                break;
+            case GameManager.CurrentPage.Elimination:
+                challengeList.value = 3;
+                break;
+
+        }
     }
 
     public void setDummyTrue()
@@ -51,6 +70,8 @@ public class Settings : MonoBehaviour
         themeBut.image.sprite = greenSwitch;
         background.sprite = backDuck;
         cam.backgroundColor = Color.black;
+        dummyText.color = Color.white;
+        elimText.color = Color.white;
     }
 
     public void setThemeCock()
@@ -61,6 +82,8 @@ public class Settings : MonoBehaviour
         themeBut.image.sprite = redSwitch;
         background.sprite = backCock;
         cam.backgroundColor = Color.white;
+        dummyText.color = Color.black;
+        elimText.color = Color.black;
     }
 
     public void EliminatePlayer()

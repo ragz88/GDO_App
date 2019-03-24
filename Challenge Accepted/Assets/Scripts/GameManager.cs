@@ -5,10 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool dummyTeam = false;
+    public bool duckTheme = false;
 
     public bool[] redTeamNodes;
     public bool[] blueTeamNodes;
-
+   
     public string[] cockNames;
 
     enum CurrentPage

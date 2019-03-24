@@ -7,7 +7,9 @@ public class LocationToggle : MonoBehaviour
 {
     [SerializeField]
     Sprite locationActiveRed;
+    [SerializeField]
     Sprite locationActiveGreen;
+    [SerializeField]
     Sprite locationInactive;
     bool isActive = true;
 

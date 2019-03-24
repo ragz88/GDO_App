@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
    
     public string[] cockNames;
 
-    enum CurrentPage
+    public enum CurrentPage
     {
         Chal1,
         Chal2,
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         Settings
     }
 
-    CurrentPage currentPage = CurrentPage.Settings;
+    public CurrentPage currentPage = CurrentPage.Settings;
 
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 

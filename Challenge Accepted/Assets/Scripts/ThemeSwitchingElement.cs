@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ThemeSwitchingElement : MonoBehaviour
 {
-    Sprite green;
-    Sprite red;
+    public Sprite green;
+    public Sprite red;
     // Start is called before the first frame update
     void Start()
     {

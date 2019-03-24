@@ -19,22 +19,22 @@ public class treasureHuntStatsUI : MonoBehaviour
         {
             if (GameManager.instance.challenge1DuckScore >= blipNumber)
             {
-                this.gameObject.SetActive(true);
+                GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                this.gameObject.SetActive(false);
+                GetComponent<SpriteRenderer>().enabled = false;
             }
         }
       else
         {
             if (GameManager.instance.challenge1CockScore >= blipNumber)
             {
-                this.gameObject.SetActive(true);
+                GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
-                this.gameObject.SetActive(false);
+                GetComponent<SpriteRenderer>().enabled = false;
             }
         }
     }

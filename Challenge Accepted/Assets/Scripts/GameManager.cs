@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool[] redTeamNodes;
     public bool[] blueTeamNodes;
 
+    public string[] cockNames;
+
     enum CurrentPage
     {
         Chal1,
@@ -41,6 +43,14 @@ public class GameManager : MonoBehaviour
     {
         redTeamNodes  = new bool[5];
         blueTeamNodes = new bool[5];
+
+        cockNames = new string[5];
+        cockNames[0] = "Hanli";
+        cockNames[1] = "Kieran";
+        cockNames[2] = "Kirsten";
+        cockNames[3] = "Luke";
+        cockNames[4] = "Siya";
+     
     }
 
     // Update is called once per frame

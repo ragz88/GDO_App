@@ -10,11 +10,25 @@ public class ButtonSwitcher : MonoBehaviour
     public Sprite button1g;
     public Sprite button2g;
     bool buttonOne = true;
+    public SpriteRenderer pictures;
+    public SpriteRenderer Stats;
     public bool isStatsButton = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (isStatsButton)
+        {
+            if (buttonOne)
+            {
+                pictures.gameObject.SetActive(true);
+                Stats.gameObject.SetActive(false);
+            }
+            else
+            {
+                pictures.gameObject.SetActive(false);
+                Stats.gameObject.SetActive(true);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -56,7 +70,13 @@ public class ButtonSwitcher : MonoBehaviour
         {
             if(buttonOne)
             {
-                //show picture and hints 
+                pictures.gameObject.SetActive(true);
+                Stats.gameObject.SetActive(false);
+            }
+            else
+            {
+                pictures.gameObject.SetActive(false);
+                Stats.gameObject.SetActive(true);
             }
         }
 

@@ -16,7 +16,14 @@ public class LocationToggle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameManager.instance.duckTheme)
+        {
+            this.GetComponent<Image>().sprite = locationActiveGreen;
+        }
+        else
+        {
+            this.GetComponent<Image>().sprite = locationActiveRed;
+        }
     }
 
     // Update is called once per frame
@@ -27,9 +34,10 @@ public class LocationToggle : MonoBehaviour
 
     public void SetLocationActive ()
     {
-        
-        if(!isActive)
+       
+        if(isActive == false)
         {
+;
            if (GameManager.instance.duckTheme)
            {
                this.GetComponent<Image>().sprite = locationActiveGreen;
@@ -40,6 +48,7 @@ public class LocationToggle : MonoBehaviour
            }
             isActive = true;
         }
+        
         else
         {
             {

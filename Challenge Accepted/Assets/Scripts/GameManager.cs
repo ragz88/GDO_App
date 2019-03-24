@@ -17,11 +17,10 @@ public class GameManager : MonoBehaviour
         Chal1,
         Chal2,
         Chal3,
-        Elimination,
-        Settings
+        Elimination
     }
 
-    public CurrentPage currentPage = CurrentPage.Settings;
+    public CurrentPage currentPage = CurrentPage.Chal1;
 
     public static GameManager instance = null;              //Static instance of GameManager which allows it to be accessed by any other script.
 

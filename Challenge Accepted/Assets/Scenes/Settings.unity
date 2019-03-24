@@ -2210,7 +2210,6 @@ MonoBehaviour:
   - {fileID: 1872950939}
   - {fileID: 53463161}
   - {fileID: 1992128682}
-  - {fileID: 1274221948}
   - {fileID: 777572894}
 --- !u!114 &1002871081
 MonoBehaviour:
@@ -2557,7 +2556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -91.5}
+  m_AnchoredPosition: {x: 0, y: -95}
   m_SizeDelta: {x: 57.72, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274221950
@@ -3940,6 +3939,9 @@ MonoBehaviour:
   greenSwitch: {fileID: 21300000, guid: 044f37d3cb3d16d46bb557fd22db947a, type: 3}
   backCock: {fileID: 21300000, guid: 1fb8b9ff696aaa0438c62f5892274ba7, type: 3}
   backDuck: {fileID: 21300000, guid: ee6312e26de0d5347918a28cefbac4be, type: 3}
+  cam: {fileID: 534669904}
+  dummyText: {fileID: 857039595}
+  elimText: {fileID: 1872950941}
   background: {fileID: 159779898}
 --- !u!4 &2078888889
 Transform:

@@ -41,7 +41,7 @@ public class ThemeSwitchingElement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if(isHeading)
+      if(isHeading && (GameManager.instance.challenge1CockScore > 4))
       {
             if (GameManager.instance.duckTheme)
             {
